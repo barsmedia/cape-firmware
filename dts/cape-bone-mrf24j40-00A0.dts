@@ -10,7 +10,7 @@
 /plugin/;
 
 / {
-	compatible = "ti,beaglebone", "ti-beaglebone-black";
+	compatible = "ti,beaglebone", "ti,beaglebone-black";
 
 	/* Identification */
 	part-number = "BB-BONE-MRF24J40";
@@ -78,8 +78,8 @@
 				pinctrl-names = "default";
 				pinctrl-0 = <&mrf24j40_cape_pins>;
 
-				interrupt-parent = <&gpio2>;
-				interrupts = <29>;
+				interrupt-parent = <&gpio1>;
+				interrupts = <29 0x8>;
 
 				//mrf24j40-wake = <&gpio4 19>;
 				//mrf24j40-reset = <gpio21 0>;
